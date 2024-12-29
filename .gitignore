@@ -1,0 +1,12 @@
+build/
+data/raw/
+data/parquet/
+data/tmp/
+data/*.duckdb
+data/tapes/*.csv
+results/tmp/
+results/sim_*.csv
+__pycache__/
+*.pyc
+data/*.json
+data/recorder*.log

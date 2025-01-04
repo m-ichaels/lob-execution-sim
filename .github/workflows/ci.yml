@@ -1,0 +1,21 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: toolchain
+        run: sudo apt-get update && sudo apt-get install -y cmake ninja-build g++
+      - name: build
+        run: cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build build
+      - name: known-answer tests
+        run: ./build/known_answer_tests
+      - name: synthetic pipeline (queue-reactive tape -> calibrate -> validate -> bench) and FIX self-test
+        run: |
+          mkdir -p ci
+          ./build/lobsim synth --calib configs/calib_binance_BTCUSDT.json --mode qr --seconds 900 --seed 3 --start-mid 7600000 --out ci/synth.csv
+          ./build/lobsim calibrate --tape ci/synth.csv --out ci/calib.json > /dev/null
+          ./build/lobsim validate --live ci/synth.csv --calib ci/calib.json --seconds 300 --outdir ci --out ci/validation.json > /dev/null
+          ./build/lobsim bench --tapes ci/synth.csv --calib ci/calib.json --episodes 2 --horizon 60 --slices 4 --no-latency-sensitivity --out ci/bench.json --md ci/bench.md > /dev/null
+          ./build/fixgw --selftest --tape ci/synth.csv --calib ci/calib.json --horizon 60 --slices 4 --port 9911

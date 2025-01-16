@@ -1,0 +1,6 @@
+TWAP             in-process:  49 fills, IS  +18.815 bp | FIX:  49 fills, IS  +18.815 bp | IDENTICAL
+VWAP             in-process:  49 fills, IS  +18.815 bp | FIX:  49 fills, IS  +18.815 bp | IDENTICAL
+AlmgrenChriss    in-process: 111 fills, IS   +4.895 bp | FIX: 111 fills, IS   +4.895 bp | IDENTICAL
+OFIAdaptive_CK   in-process: 120 fills, IS   +6.432 bp | FIX: 120 fills, IS   +6.432 bp | IDENTICAL
+OFIAdaptive_CKadv in-process: 111 fills, IS   +4.925 bp | FIX: 111 fills, IS   +4.925 bp | IDENTICAL
+FIX SELF-TEST PASSED: identical fills in-process and through FIX 4.4

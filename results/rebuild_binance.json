@@ -1,0 +1,267 @@
+{
+ "venue": "binance",
+ "symbol": "BTCUSDT",
+ "lines": 448169,
+ "ws_msgs": 448127,
+ "depth_msgs": 100781,
+ "trade_msgs": 347346,
+ "snapshots": 3,
+ "gaps": 2,
+ "resyncs": 3,
+ "disconnects": 0,
+ "dropped_unsynced_msgs": 18,
+ "bad_lines": 0,
+ "tape_events": 3903888,
+ "first_ts_ns": 1.789499675e+18,
+ "last_ts_ns": 1.789509772e+18,
+ "seconds": 10097.1,
+ "recv_minus_exchange_depth": {
+  "n": 100781,
+  "p05_ms": 164.9418945,
+  "p50_ms": 169.0710449,
+  "p95_ms": 181.5432129,
+  "mean_ms": 172.7896073
+ },
+ "recv_minus_exchange_trade": {
+  "n": 347346,
+  "p05_ms": 166.6870117,
+  "p50_ms": 175.9621582,
+  "p95_ms": 425.647583,
+  "mean_ms": 208.35117
+ },
+ "parity_checks": [
+  {
+   "update_id": 100172927964,
+   "levels_compared": 1997,
+   "mismatched": 0,
+   "excluded_straddled": 3,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100173268020,
+   "levels_compared": 1997,
+   "mismatched": 0,
+   "excluded_straddled": 3,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100173537749,
+   "levels_compared": 1958,
+   "mismatched": 0,
+   "excluded_straddled": 42,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100173898738,
+   "levels_compared": 1990,
+   "mismatched": 0,
+   "excluded_straddled": 10,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100174139146,
+   "levels_compared": 1981,
+   "mismatched": 0,
+   "excluded_straddled": 19,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100174375337,
+   "levels_compared": 1997,
+   "mismatched": 0,
+   "excluded_straddled": 3,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100174582004,
+   "levels_compared": 1987,
+   "mismatched": 0,
+   "excluded_straddled": 13,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100174796646,
+   "levels_compared": 1996,
+   "mismatched": 0,
+   "excluded_straddled": 4,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100175017812,
+   "levels_compared": 1986,
+   "mismatched": 0,
+   "excluded_straddled": 14,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100175270643,
+   "levels_compared": 1937,
+   "mismatched": 0,
+   "excluded_straddled": 63,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100175492348,
+   "levels_compared": 1998,
+   "mismatched": 0,
+   "excluded_straddled": 2,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100175658500,
+   "levels_compared": 1955,
+   "mismatched": 0,
+   "excluded_straddled": 45,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100175790949,
+   "levels_compared": 1997,
+   "mismatched": 0,
+   "excluded_straddled": 3,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100175973938,
+   "levels_compared": 1996,
+   "mismatched": 0,
+   "excluded_straddled": 4,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100176130755,
+   "levels_compared": 1713,
+   "mismatched": 0,
+   "excluded_straddled": 287,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100176407687,
+   "levels_compared": 1993,
+   "mismatched": 0,
+   "excluded_straddled": 7,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100176617338,
+   "levels_compared": 1972,
+   "mismatched": 0,
+   "excluded_straddled": 28,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100176870626,
+   "levels_compared": 1935,
+   "mismatched": 0,
+   "excluded_straddled": 65,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100177020855,
+   "levels_compared": 1999,
+   "mismatched": 0,
+   "excluded_straddled": 1,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100177112148,
+   "levels_compared": 1996,
+   "mismatched": 0,
+   "excluded_straddled": 4,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100177300453,
+   "levels_compared": 1995,
+   "mismatched": 0,
+   "excluded_straddled": 5,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100177451911,
+   "levels_compared": 1993,
+   "mismatched": 0,
+   "excluded_straddled": 7,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100177551325,
+   "levels_compared": 1996,
+   "mismatched": 0,
+   "excluded_straddled": 4,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100177695170,
+   "levels_compared": 1992,
+   "mismatched": 0,
+   "excluded_straddled": 8,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100177794320,
+   "levels_compared": 1999,
+   "mismatched": 0,
+   "excluded_straddled": 1,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100177899180,
+   "levels_compared": 1941,
+   "mismatched": 0,
+   "excluded_straddled": 59,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100178021277,
+   "levels_compared": 1977,
+   "mismatched": 0,
+   "excluded_straddled": 23,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100178150488,
+   "levels_compared": 1991,
+   "mismatched": 0,
+   "excluded_straddled": 9,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100178274313,
+   "levels_compared": 1998,
+   "mismatched": 0,
+   "excluded_straddled": 2,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100178382593,
+   "levels_compared": 1999,
+   "mismatched": 0,
+   "excluded_straddled": 1,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100178568735,
+   "levels_compared": 1991,
+   "mismatched": 0,
+   "excluded_straddled": 9,
+   "exact_boundary": false
+  },
+  {
+   "update_id": 100178666636,
+   "levels_compared": 1996,
+   "mismatched": 0,
+   "excluded_straddled": 4,
+   "exact_boundary": false
+  }
+ ],
+ "parity_levels_compared": 63248,
+ "parity_levels_mismatched": 0,
+ "files": [
+  "data/raw/binance/BTCUSDT\\2026-09-15\\19.ndjson",
+  "data/raw/binance/BTCUSDT\\2026-09-15\\20.ndjson",
+  "data/raw/binance/BTCUSDT\\2026-09-15\\21.ndjson",
+  "data/raw/binance/BTCUSDT\\2026-09-15\\22.ndjson"
+ ],
+ "tape": "data/tapes/binance_BTCUSDT_2026-09-15.csv"
+}

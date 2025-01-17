@@ -1,0 +1,42 @@
+{
+ "venue": "coinbase",
+ "symbol": "BTC-USD",
+ "lines": 262615,
+ "ws_msgs": 262608,
+ "depth_msgs": 167339,
+ "trade_msgs": 85184,
+ "snapshots": 3,
+ "gaps": 0,
+ "resyncs": 3,
+ "disconnects": 0,
+ "dropped_unsynced_msgs": 0,
+ "bad_lines": 0,
+ "tape_events": 3938615,
+ "first_ts_ns": 1.789499674e+18,
+ "last_ts_ns": 1.789509772e+18,
+ "seconds": 10098.10258,
+ "recv_minus_exchange_depth": {
+  "n": 167339,
+  "p05_ms": 90.6768072,
+  "p50_ms": 104.569728,
+  "p95_ms": 139.9669032,
+  "mean_ms": 108.9417681
+ },
+ "recv_minus_exchange_trade": {
+  "n": 85184,
+  "p05_ms": 90.465,
+  "p50_ms": 99.635856,
+  "p95_ms": 132.5463048,
+  "mean_ms": 104.3825835
+ },
+ "parity_checks": [],
+ "parity_levels_compared": 0,
+ "parity_levels_mismatched": 0,
+ "files": [
+  "data/raw/coinbase/BTC-USD\\2026-09-15\\19.ndjson",
+  "data/raw/coinbase/BTC-USD\\2026-09-15\\20.ndjson",
+  "data/raw/coinbase/BTC-USD\\2026-09-15\\21.ndjson",
+  "data/raw/coinbase/BTC-USD\\2026-09-15\\22.ndjson"
+ ],
+ "tape": "data/tapes/coinbase_BTC-USD_2026-09-15.csv"
+}

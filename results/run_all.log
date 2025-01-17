@@ -1,0 +1,69 @@
+[lobsim] L3: 470571 orders, 21687 tracked at touch, 728770 tape events
+[lobsim] decomposing events and fitting intensities / sizes / Hawkes ...
+[lobsim] queue_reactive: generated 326867 events
+[lobsim] zero_intelligence: generated 416979 events
+[lobsim] hawkes: generated 283013 events
+[lobsim] fill curve naive_fifo: 3991 probes
+[lobsim] fill curve power_prob: 3991 probes
+[lobsim] fill curve risk_averse: 3991 probes
+[lobsim] markout replay/naive_fifo: p_fill=0.666110 corr=-0.514667
+[lobsim] markout replay/power_prob: p_fill=0.682805 corr=-0.491272
+[lobsim] markout replay/risk_averse: p_fill=0.657763 corr=-0.520920
+[lobsim] markout queue_reactive/naive_fifo: p_fill=0.786667 corr=-0.591085
+[lobsim] markout queue_reactive/power_prob: p_fill=0.846667 corr=-0.494494
+[lobsim] markout queue_reactive/risk_averse: p_fill=0.793333 corr=-0.571649
+[lobsim] markout zero_intelligence/naive_fifo: p_fill=0.880000 corr=-0.485517
+[lobsim] markout zero_intelligence/power_prob: p_fill=0.893333 corr=-0.453654
+[lobsim] markout zero_intelligence/risk_averse: p_fill=0.886667 corr=-0.482731
+ck-adverse-ticks = 1331.621554
+[lobsim] day binance_BTCUSDT_2026-09-15.csv episode 1/12 done
+[lobsim] day binance_BTCUSDT_2026-09-15.csv episode 2/12 done
+[lobsim] day binance_BTCUSDT_2026-09-15.csv episode 3/12 done
+[lobsim] day binance_BTCUSDT_2026-09-15.csv episode 4/12 done
+[lobsim] day binance_BTCUSDT_2026-09-15.csv episode 5/12 done
+[lobsim] day binance_BTCUSDT_2026-09-15.csv episode 6/12 done
+[lobsim] day binance_BTCUSDT_2026-09-15.csv episode 7/12 done
+[lobsim] day binance_BTCUSDT_2026-09-15.csv episode 8/12 done
+[lobsim] day binance_BTCUSDT_2026-09-15.csv episode 9/12 done
+[lobsim] day binance_BTCUSDT_2026-09-15.csv episode 10/12 done
+[lobsim] day binance_BTCUSDT_2026-09-15.csv episode 11/12 done
+[lobsim] day binance_BTCUSDT_2026-09-15.csv episode 12/12 done
+[lobsim] generated 116958 events, 160721 tape rows
+[lobsim] generated 116059 events, 159168 tape rows
+[lobsim] generated 116479 events, 159869 tape rows
+[lobsim] generated 116529 events, 159966 tape rows
+[lobsim] day synth_qr_day1.csv episode 1/6 done
+[lobsim] day synth_qr_day1.csv episode 2/6 done
+[lobsim] day synth_qr_day1.csv episode 3/6 done
+[lobsim] day synth_qr_day1.csv episode 4/6 done
+[lobsim] day synth_qr_day1.csv episode 5/6 done
+[lobsim] day synth_qr_day1.csv episode 6/6 done
+[lobsim] day synth_qr_day2.csv episode 1/6 done
+[lobsim] day synth_qr_day2.csv episode 2/6 done
+[lobsim] day synth_qr_day2.csv episode 3/6 done
+[lobsim] day synth_qr_day2.csv episode 4/6 done
+[lobsim] day synth_qr_day2.csv episode 5/6 done
+[lobsim] day synth_qr_day2.csv episode 6/6 done
+[lobsim] day synth_qr_day3.csv episode 1/6 done
+[lobsim] day synth_qr_day3.csv episode 2/6 done
+[lobsim] day synth_qr_day3.csv episode 3/6 done
+[lobsim] day synth_qr_day3.csv episode 4/6 done
+[lobsim] day synth_qr_day3.csv episode 5/6 done
+[lobsim] day synth_qr_day3.csv episode 6/6 done
+[lobsim] day synth_qr_day4.csv episode 1/6 done
+[lobsim] day synth_qr_day4.csv episode 2/6 done
+[lobsim] day synth_qr_day4.csv episode 3/6 done
+[lobsim] day synth_qr_day4.csv episode 4/6 done
+[lobsim] day synth_qr_day4.csv episode 5/6 done
+[lobsim] day synth_qr_day4.csv episode 6/6 done
+TWAP             in-process:  49 fills, IS  +18.815 bp | FIX:  49 fills, IS  +18.815 bp | IDENTICAL
+VWAP             in-process:  49 fills, IS  +18.815 bp | FIX:  49 fills, IS  +18.815 bp | IDENTICAL
+AlmgrenChriss    in-process: 111 fills, IS   +4.895 bp | FIX: 111 fills, IS   +4.895 bp | IDENTICAL
+OFIAdaptive_CK   in-process: 120 fills, IS   +6.432 bp | FIX: 120 fills, IS   +6.432 bp | IDENTICAL
+OFIAdaptive_CKadv in-process: 111 fills, IS   +4.925 bp | FIX: 111 fills, IS   +4.925 bp | IDENTICAL
+FIX SELF-TEST PASSED: identical fills in-process and through FIX 4.4
+KNOWN-ANSWER TESTS PASSED: 52/52 checks
+figures written to results/figures
+written results\summary.md
+wrote report.pdf
+done

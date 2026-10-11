@@ -103,6 +103,8 @@ Parent order 3 BTC (300,000 lots) over 300 s in 10 slices, 12 episodes alternati
 
 Replay, naive FIFO, 50 ms: AC −4.10 bp vs TWAP [−6.64, −1.38]; CKadv −4.24 [−6.80, −1.50]; CK +0.93 [−2.47, +3.93]; VWAP +0.19. Queue-reactive: AC +1.72 [−0.26, +3.31] (impact +0.65 bp), CK +1.32, CKadv +1.56. The absolute level is timing noise (σ ≈ 1 bp/√s on a 5-minute horizon), which is why the table reports paired differences. The queue assumption barely moves the numbers on this venue because fills come from quote jumps, not from the queue draining. Full table: `results/bench.md`; four synthetic queue-reactive days with day-paired CIs (2 and 3 distinct rankings): `results/bench_synth_days.md`.
 
+One of the twelve episodes is empty in replay. Episode 6 falls in a gap in the Binance recording, so all 30 of its replay rows (5 algorithms, 3 queue models, 2 latencies) have zero shortfall; its queue-reactive and zero-intelligence rows are normal. The replay means above therefore include one zero. Over the 11 non-empty episodes, replay at 50 ms with naive FIFO gives AC −4.47 bp vs TWAP [−7.13, −1.59] and CKadv −4.63 [−7.33, −1.70] (20,000-draw episode bootstrap on `results/bench.json`), so the twelve-episode figures understate the edge slightly; the rankings do not change.
+
 ![attribution](results/figures/attribution.png)
 
 ### Fills and queue position

@@ -7,7 +7,7 @@ The README gives the summary. This file holds the detail behind it.
 | path | what |
 |---|---|
 | `tools/recorder/recorder.py` | raw websocket recorder: Binance `depth@100ms`+`trade` synchronised to a REST snapshot (U/u rule), Coinbase `level2_batch`+`matches`, Bitstamp `live_orders`/`live_trades` (order-by-order). Append-only hourly NDJSON; `raw_to_parquet.py` archives it |
-| `include/lobsim/*.hpp` | C++20 engine (header-only): book, tape, queue models, simulators, calibration, algos, fill models, validation, analysis, L3 check, FIX 4.4 |
+| `include/lobsim/*.hpp` | C++ engine (header-only): book, tape, queue models, simulators, calibration, algos, fill models, validation, analysis, L3 check, FIX 4.4 |
 | `src/main.cpp` → `lobsim` | CLI: `rebuild`, `calibrate`, `synth`, `validate`, `fillcurve`, `ofi`, `markout`, `bench`, `l3check` |
 | `src/fix_gateway.cpp` → `fixgw` | FIX 4.4 gateway around any simulator mode, and the identical-fills self-test |
 | `tests/known_answer_tests.cpp` | 52 hand-checkable assertions (flat-book TWAP, book walking, replay = history, queue models, latency, determinism, attribution identity, OFI, FIX round trip) |

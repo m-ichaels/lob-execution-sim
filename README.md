@@ -9,7 +9,7 @@ The question: how much does the choice of simulator change the ranking of execut
 - **The ranking depends on the simulator.** TWAP, VWAP, Almgren–Chriss and two OFI-adaptive Cont–Kukanov schedulers come out in a different order in each mode: replay, queue-reactive and zero-intelligence give three orderings at 50 ms latency, and three again at 100 ms.
 - **Passive fills are adversely selected in every mode.** A limit order at the touch that gets filled is marked out 300–500 ticks against you within 100 ms, and about −1,700 ticks (−2.3 bp) after 60 s in replay. Being filled is negatively correlated with the next return (about −0.5).
 - **Charging that cost decides the scheduler.** In replay, the OFI scheduler that charges passive fills their measured mark-out beats TWAP by 4.2 bp. The naive version posts 94 % of the order passively and is the worst algorithm. In the queue-reactive mode, front-loading pays impact and TWAP comes first.
-- **L2 queue models overstate the queue ahead.** Checked against 21,687 real Bitstamp orders at the touch, every queue-position model overestimates the queue ahead by about 20 %.
+- **L2 queue models overstate the queue ahead.** Checked against 21,687 real Bitstamp orders at the touch, six of the seven queue-position models overstate the queue ahead on average, by 14 to 29 % (median error zero); only the most front-loaded one (power law, n = 0.25) understates it, by 21 %.
 
 Implementation shortfall against TWAP in bp, 50 ms latency, naive FIFO queue, paired 95 % intervals over 12 episodes (negative is cheaper):
 

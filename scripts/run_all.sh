@@ -25,7 +25,6 @@ $B bench --tapes data/tapes/synth_qr_day1.csv,data/tapes/synth_qr_day2.csv,data/
 ./build/known_answer_tests | tee results/tests.txt
 python scripts/plots.py results results/figures
 python scripts/summarize.py results
-python scripts/report.py results report.pdf
 python tools/recorder/raw_to_parquet.py data/raw data/parquet/raw > /dev/null
 python storage/duckdb/build_research_db.py data/tapes data/parquet/tapes data/research.duckdb > /dev/null
 echo done

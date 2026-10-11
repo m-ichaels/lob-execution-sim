@@ -1,6 +1,6 @@
 # lob-execution-sim
 
-An order-book execution simulator in C++20 with three market models, a FIX 4.4 gateway and transaction-cost analysis, run on order-book data I recorded from Binance, Coinbase and Bitstamp on 15 September 2026.
+An order-book execution simulator in C++ with three market models, a FIX 4.4 gateway and transaction-cost analysis, run on order-book data I recorded from Binance, Coinbase and Bitstamp on 15 September 2026.
 
 The question: how much does the choice of simulator change the ranking of execution algorithms, and what does an order-flow-aware scheduler save once queue position and fills are modelled properly?
 
@@ -44,7 +44,7 @@ All numbers are in `results/summary.md` and `results/bench.md`; the detail is in
 ## Run
 
 ```
-./build.ps1                     # MSVC + Ninja; or: cmake -S . -B build -G Ninja && cmake --build build
+./build.ps1                     # needs a C++20 compiler; MSVC + Ninja, or: cmake -S . -B build -G Ninja && cmake --build build
 ./build/known_answer_tests      # 52 checks
 python tools/recorder/recorder.py --out data/raw --minutes 120 --bitstamp btcusd
 scripts/run_all.sh 2026-09-15 <bitstamp clean-start rx ns>
